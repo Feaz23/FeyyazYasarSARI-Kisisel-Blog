@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feyyaz Yaşar SARI</title>
+  <style>
+    /* Genel stil ayarları */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #000080; /* Lacivert */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Ana içerik ve aside için kapsayıcı */
+    .main-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    /* İçerik kutusu */
+    .container {
+      flex: 1 1 60%;
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Aside bölümü (fotoğraf) */
+    aside {
+      flex: 1 1 30%;
+      margin: 20px;
+      max-width: 300px; /* İstenilen maksimum genişlik */
+    }
+    aside img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #000080;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Başlık Bölümü -->
+  <header>
+    <h1>Feyyaz Yaşar SARI</h1>
+  </header>
+
+  <!-- Navigasyon Menüsü -->
+  <nav>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hakkimda">Hakkımda</a>
+  </nav>
+
+  <!-- Ana içerik ve fotoğraf için kapsayıcı -->
+  <div class="main-wrapper">
+    <!-- Ana İçerik -->
+    <div class="container" id="anasayfa">
+      <h2>Ana Sayfa</h2>
+      <p>Hoş geldiniz! Bu benim kişisel blog sitem.</p>
+    </div>
+
+    <!-- Fotoğrafın ekleneceği Aside Bölümü -->
+    <aside>
+      <img src="kampüs.jpg" alt="Feyyaz Yaşar SARI - Fotoğraf">
+    </aside>
+  </div>
+
+  <!-- Hakkımda Bölümü -->
+  <div class="container" id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>
+      Fransa’da Colmar şehrinde doğdum. Eğitim hayatımın yarısını Fransa’da, diğer yarısını Samsun’da tamamladıktan sonra Kırıkkale Üniversitesi’nde Elektrik Elektronik Mühendisliği bölümünü kazandım ve şu anda 3. sınıf öğrencisiyim. Eğitim ve araştırma süreçlerine yoğun ilgi gösteriyor, üniversite hayatım boyunca topluluklarda aktif görevler alarak takım çalışması ve liderlik yeteneklerimi geliştirdim. Ayrıca, çeşitli projelerde aktif olarak yer alıyor ve akademik araştırmalarımı sürdürüyorum.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Feyyaz Yaşar SARI</p>
+  </footer>
+</body>
+</html>
