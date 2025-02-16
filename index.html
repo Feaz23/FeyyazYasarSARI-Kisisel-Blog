@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feyyaz Yaşar SARI</title>
+  <style>
+    /* Genel stil ayarları */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #000080; /* Lacivert */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .container {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    aside {
+      margin-top: 20px;
+    }
+    aside img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    /* Sosyal medya stil */
+    #sosyal-medya {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #sosyal-medya a {
+      margin: 0 10px;
+    }
+    #sosyal-medya img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    #sosyal-medya img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <script>
+    // Fonksiyon: Belirtilen bölümü göster, diğerlerini gizle.
+    function showSection(sectionId) {
+      // Tüm bölümleri seçip gizleyelim
+      var sections = document.querySelectorAll('.container');
+      sections.forEach(function(section) {
+        section.style.display = 'none';
+      });
+      // İlgili bölümü gösterelim
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Sayfa yüklendiğinde Ana Sayfa bölümünü göster
+    window.onload = function() {
+      showSection('anasayfa');
+    }
+  </script>
+</head>
+<body>
+  <!-- Başlık -->
+  <header>
+    <h1>Feyyaz Yaşar SARI</h1>
+  </header>
+  
+  <!-- Navigasyon Menüsü -->
+  <nav>
+    <a onclick="showSection('anasayfa')">Ana Sayfa</a>
+    <a onclick="showSection('hakkimda')">Hakkımda</a>
+  </nav>
+  
+  <!-- Ana Sayfa İçeriği -->
+  <div class="container" id="anasayfa">
+    <h2>Ana Sayfa</h2>
+    <p>Hoş geldiniz! Bu benim kişisel blog sitem.</p>
+    <aside>
+      <img src="kampus.jpg" alt="Feyyaz Yaşar SARI">
+    </aside>
+  </div>
+  
+  <!-- Hakkımda İçeriği (Başlangıçta gizli) -->
+  <div class="container" id="hakkimda" style="display: none;">
+    <h2>Hakkımda</h2>
+    <p>
+      Fransa’da Colmar şehrinde doğdum. Eğitim hayatımın yarısını Fransa’da, diğer yarısını Samsun’da tamamladıktan sonra Kırıkkale Üniversitesi’nde Elektrik Elektronik Mühendisliği bölümünü kazandım ve şu anda 3. sınıf öğrencisiyim. Eğitim ve araştırma süreçlerine yoğun ilgi gösteriyor, üniversite hayatım boyunca topluluklarda aktif görevler alarak takım çalışması ve liderlik yeteneklerimi geliştirdim. Ayrıca, çeşitli projelerde aktif olarak yer alıyor ve akademik araştırmalarımı sürdürüyorum.
+    </p>
+
+    <!-- Sosyal Medya Hesapları -->
+    <div id="sosyal-medya">
+      <h3>Beni Takip Edin</h3>
+      <a href="https://www.linkedin.com/in/feyyaz" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/feyyaz" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+      <a href="https://www.instagram.com/feyyaz" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Feyyaz Yaşar SARI</p>
+  </footer>
+</body>
+</html>
