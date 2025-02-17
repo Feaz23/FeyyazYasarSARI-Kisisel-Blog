@@ -7,74 +7,88 @@
   <style>
     /* Genel stil ayarları */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      background-color: #f4f7fc;
+      background-color: #f0f4f8;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #000080; /* Lacivert */
+      background-color: #1f3b4c; /* Modern lacivert */
       color: white;
-      padding: 30px 0;
+      padding: 60px 0;
       text-align: center;
-      font-size: 2em;
-      letter-spacing: 2px;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
     nav {
-      background-color: #333;
-      padding: 15px;
+      background-color: #222;
+      padding: 15px 0;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       margin: 0 20px;
+      font-size: 1.1em;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 1.1em;
     }
     nav a:hover {
-      color: #f4f4f4;
+      color: #e0e0e0;
+      border-bottom: 2px solid #1f3b4c;
     }
     .container {
       background: white;
       margin: 20px auto;
-      padding: 30px;
+      padding: 40px;
       max-width: 900px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
     }
-    aside img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 20px 0;
+    .container h2 {
+      font-size: 2em;
+      color: #1f3b4c;
+      margin-bottom: 20px;
     }
-    blockquote {
-      background-color: #f9f9f9;
-      padding: 15px;
-      margin: 20px 0;
-      border-left: 4px solid #000080; /* Lacivert renk */
+    .container p {
+      font-size: 1.1em;
+      color: #666;
+      line-height: 1.8;
+    }
+    .container blockquote {
+      background: #f7f7f7;
+      padding: 20px;
+      margin: 30px 0;
+      border-left: 5px solid #1f3b4c;
       font-style: italic;
     }
     blockquote footer {
       text-align: right;
-      color: #777;
-      font-size: 0.9em;
+      font-size: 1em;
+      color: #888;
+    }
+    aside img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     footer {
-      background: #333;
+      background: #222;
       color: white;
       text-align: center;
-      padding: 10px;
-      margin-top: 30px;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
     }
     /* Mobil uyumlu tasarım */
     @media (max-width: 768px) {
       nav {
-        padding: 10px;
+        padding: 15px;
       }
       nav a {
         margin: 0 10px;
@@ -86,7 +100,6 @@
     }
   </style>
   <script>
-    // Fonksiyon: Belirtilen bölümü göster, diğerlerini gizle.
     function showSection(sectionId) {
       var sections = document.querySelectorAll('.container');
       sections.forEach(function(section) {
@@ -110,21 +123,21 @@
   <nav>
     <a onclick="showSection('anasayfa')">Ana Sayfa</a>
     <a onclick="showSection('hakkimda')">Hakkımda</a>
-    <a onclick="showSection('begenen-sozler')">Sözler</a>
+    <a onclick="showSection('begenen-sozler')">Beğenilen Sözler</a>
   </nav>
   
   <!-- Ana Sayfa İçeriği -->
   <div class="container" id="anasayfa">
     <h2>Ana Sayfa</h2>
-    <p>Hoş geldiniz! Bu benim kişisel blog sitem.</p>
+    <p>Hoş geldiniz! Bu benim kişisel blog sitem. Burada hayatım ve projelerim hakkında bilgiler bulabilirsiniz.</p>
     <aside>
       <img src="kampus.jpg" alt="Feyyaz Yaşar SARI">
     </aside>
   </div>
 
-  <!-- Beğenilen Sözler İçeriği (Ana Sayfa ve Hakkımda Arasına Eklendi) -->
+  <!-- Beğenilen Sözler İçeriği -->
   <div class="container" id="begenen-sozler" style="display: none;">
-    <h2>Sözler</h2>
+    <h2>Beğenilen Sözler</h2>
     <blockquote>
       <p>"Dört şey geri gelmez: Söylenen söz, atılan ok, geçen zaman, kaçırılan fırsat."</p>
       <footer>- Halife Ömer</footer>
