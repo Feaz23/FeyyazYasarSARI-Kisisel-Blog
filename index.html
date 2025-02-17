@@ -69,9 +69,23 @@
     #sosyal-medya img:hover {
       transform: scale(1.1);
     }
-    /* Beğenilen sözdeki kişi adı rengi */
-    .soz-sahibi {
-      color: #000; /* Siyah renk */
+    /* Beğenilen sözler stili */
+    #begenen-sozler {
+      background-color: #000; /* Siyah arka plan */
+      color: #fff; /* Beyaz yazı rengi */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #begenen-sozler blockquote {
+      margin: 20px 0;
+      font-style: italic;
+      border-left: 5px solid #555;
+      padding-left: 10px;
+    }
+    #begenen-sozler footer {
+      text-align: right;
+      color: #ccc; /* Gri footer yazısı */
+      font-size: 0.9em;
     }
   </style>
   <script>
@@ -137,10 +151,15 @@
   </div>
   
   <!-- Beğenilen Sözler Bölümü -->
-  <div class="container" id="sozler" style="display: none;">
-    <h2>Sözler</h2>
+  <div class="container" id="begenen-sozler" style="display: none;">
+    <h2>Beğenilen Sözler</h2>
     <blockquote>
-      <p>"Dört şey geri gelmez: söylenen söz, atılan ok; geçen zaman; kaçırılan fırsat." <span class="soz-sahibi">- Halife Ömer</span></p>
+      <p>"Dört şey geri gelmez: Söylenen söz, atılan ok, geçen zaman, kaçırılan fırsat."</p>
+      <footer>- Halife Ömer</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Hayatta en önemli şey, hangi yolda olduğun değil, o yolda nasıl yürüdüğündür."</p>
+      <footer>- Bruce Lee</footer>
     </blockquote>
   </div>
   
