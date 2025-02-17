@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feyyaz Yaşar Sarı</title>
+  <title>Feyyaz Yaşar SARI</title>
   <style>
     /* Genel stil ayarları */
     body {
@@ -52,39 +52,19 @@
       padding: 10px;
       margin-top: 20px;
     }
-    /* Sosyal medya stil */
-    #sosyal-medya {
-      text-align: center;
-      margin-top: 20px;
+    /* Sözler Bölümü için stil */
+#sozler blockquote {
+  background-color: #f9f9f9;
+  border-left: 4px solid #000080; /* Lacivert renk */
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
     }
-    #sosyal-medya a {
-      margin: 0 10px;
-    }
-    #sosyal-medya img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      transition: transform 0.2s;
-    }
-    #sosyal-medya img:hover {
-      transform: scale(1.1);
-    }
-    /* Beğenilen sözler stili */
-    #begenen-sozler {
-      background-color: #000; /* Siyah arka plan */
-      color: #fff; /* Beyaz yazı rengi */
-      padding: 20px;
-      border-radius: 10px;
-    }
-    #begenen-sozler blockquote {
-      margin: 20px 0;
-      font-style: italic;
-      border-left: 5px solid #555;
-      padding-left: 10px;
-    }
-    #begenen-sozler footer {
+    #sozler footer {
       text-align: right;
-      color: #ccc; /* Gri footer yazısı */
+      color: #777;
       font-size: 0.9em;
     }
   </style>
@@ -109,49 +89,42 @@
 <body>
   <!-- Başlık -->
   <header>
-    <h1>Feyyaz Yaşar Sarı</h1>
+    <h1>Feyyaz Yaşar SARI</h1>
   </header>
-  
+
   <!-- Navigasyon Menüsü -->
   <nav>
     <a onclick="showSection('anasayfa')">Ana Sayfa</a>
     <a onclick="showSection('sozler')">Sözler</a>
-    <a onclick="showSection('hakkimda')">Hakkımda</a>  
+    <a onclick="showSection('hakkimda')">Hakkımda</a>
   </nav>
-  
+
   <!-- Ana Sayfa İçeriği -->
   <div class="container" id="anasayfa">
     <h2>Ana Sayfa</h2>
-    <p>Hoş geldiniz!</p>
+    <p>Hoş geldiniz! Bu benim kişisel blog sitem.</p>
+
+    <h3>Başarılar</h3>
+    <ul>
+      <li style="margin-bottom: 15px;">
+        <strong>Sıfırdan İleri Seviye Python Programlama</strong>
+        <p style="font-size: smaller;">BTK Akademi'nin "Sıfırdan İleri Seviye Python Programlama" eğitimini 44 saatlik uygulamalı çalışmayla tamamladım, Python'un temel ve ileri düzey konularında bilgi sahibi oldum.</p>
+        <button onclick="window.open('Sıfırdan_İleri_Seviye_Python_Programlama_Sertifika_page-0001.jpg', '_blank')" style="font-size: small; padding: 5px 10px; margin-top: 5px; cursor: pointer;">Sertifikayı Gör</button>
+      </li>
+      <li style="margin-bottom: 15px;">
+        <strong>Gönüllü Fransızca Tercümanlığı CANSUYU Yardımlaşma ve Dayanışma Derneği</strong>
+        <p style="font-size: smaller;">KAMERUN CUMHURİYETİ'nde, ekibim ve yerel halk ile Fransızca iletişim sağlayarak gönüllü tercümanlık görevimi yürüttüm.</p>
+        <button onclick="window.open('Cansuyu.jpg', '_blank')" style="font-size: small; padding: 5px 10px; margin-top: 5px; cursor: pointer;">Sertifikayı Gör</button>
+      </li>
+    </ul>
+
     <aside>
-      <img src="kampus.jpg" alt="Feyyaz Yaşar Sarı">
+      <img src="kampus.jpg" alt="Feyyaz Yaşar SARI">
     </aside>
   </div>
-  
-  <!-- Hakkımda İçeriği (Başlangıçta gizli) -->
-  <div class="container" id="hakkimda" style="display: none;">
-    <h2>Hakkımda</h2>
-    <p>
-      Fransa’da Colmar şehrinde doğdum. Eğitim hayatımın yarısını Fransa’da, diğer yarısını Samsun’da tamamladıktan sonra Kırıkkale Üniversitesi’nde Elektrik Elektronik Mühendisliği bölümünü kazandım ve şu anda 3. sınıf öğrencisiyim. Eğitim ve araştırma süreçlerine yoğun ilgi gösteriyor, üniversite hayatım boyunca topluluklarda aktif görevler alarak takım çalışması ve liderlik yeteneklerimi geliştirdim. Ayrıca, çeşitli projelerde aktif olarak yer alıyor ve akademik araştırmalarımı sürdürüyorum.
-    </p>
 
-    <!-- Sosyal Medya Hesapları -->
-    <div id="sosyal-medya">
-      <h4>Benimle Bağlantı Kurun</h4>
-      <a href="https://www.linkedin.com/in/feyyaz-sari-5b2326193/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/Feaz23" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-      </a>
-      <a href="https://www.instagram.com/feyyaz.sari" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-      </a>
-    </div>
-  </div>
-  
-  <!-- Beğenilen Sözler Bölümü -->
-  <div class="container" id="begenen-sozler" style="display: none;">
+  <!-- Sözler İçeriği (Başlangıçta gizli) -->
+  <div class="container" id="sozler" style="display: none;">
     <h2>Sözler</h2>
     <blockquote>
       <p>"Dört şey geri gelmez: Söylenen söz, atılan ok, geçen zaman, kaçırılan fırsat."</p>
@@ -161,11 +134,29 @@
       <p>"Hayatta en önemli şey, hangi yolda olduğun değil, o yolda nasıl yürüdüğündür."</p>
       <footer>- Bruce Lee</footer>
     </blockquote>
+    <blockquote>
+  <p>"Şimdiki zaman çok kısadır, hatta öyle kısadır ki hiç yokmuş gibi görünür. Zira her daim hareket halindedir, akar ve hızla geçip gider, varlığı daha insana varmadan biter."</p>
+  <footer>- Farabi</footer>
+    </blockquote>
+    <blockquote>
+  <p>"Ortalama insan; görmeden bakar, duymadan dinler, hissetmeden dokunur, tat almadan yer, fark etmeden hareket eder, kokuları ayırmadan nefes alır, düşünmeden konuşur. Böyle duygusal körlükte hafızanın evrenle ilişkisi kesilir."</p>
+  <footer>- Leonardo Da Vinci</footer>
+    </blockquote>
+
+
   </div>
-  
+
+  <!-- Hakkımda İçeriği (Başlangıçta gizli) -->
+  <div class="container" id="hakkimda" style="display: none;">
+    <h2>Hakkımda</h2>
+    <p>
+      Fransa’da Colmar şehrinde doğdum. Eğitim hayatımın yarısını Fransa’da, diğer yarısını Samsun’da tamamladıktan sonra Kırıkkale Üniversitesi’nde Elektrik Elektronik Mühendisliği bölümünü kazandım ve şu anda 3. sınıf öğrencisiyim. Eğitim ve araştırma süreçlerine yoğun ilgi gösteriyor, üniversite hayatım boyunca topluluklarda aktif görevler alarak takım çalışması ve liderlik yeteneklerimi geliştirdim. Ayrıca, çeşitli projelerde aktif olarak yer alıyor ve akademik araştırmalarımı sürdürüyorum.
+    </p>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Feyyaz Yaşar Sarı</p>
+    <p>&copy; 2025 Feyyaz Yaşar SARI</p>
   </footer>
 </body>
 </html>
