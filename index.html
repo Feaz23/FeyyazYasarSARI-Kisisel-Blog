@@ -7,122 +7,186 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
+  scroll-behavior: smooth;
+}
 
-    /* NAVBAR */
-    nav {
-      background: #0d47a1;
-      position: sticky;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #90caf9;
-    }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
 
-    #sosyal-medya {
+/* NAVBAR */
+nav {
+  background: #0d47a1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #90caf9;
+}
+
+/* HERO */
+header {
+  position: relative;
+  background: url('hero.png') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+header .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+header h1, header p {
+  position: relative;
+  z-index: 2;
+}
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 18px;
+  max-width: 600px;
+}
+#hedefBtn img {
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#hedefBtn img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: 80px auto;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+section h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+/* HEDEFLER */
+.hedef-basliklar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.hedef-link {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.hedef-link:hover {
+  background-color: #1565c0;
+}
+.hedef-kutu {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fefefe;
+  border-left: 4px solid #0d47a1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* İLHAM VERİCİ SÖZLER */
+.quote-box {
+  background: #fefefe;
+  border-left: 4px solid #0d47a1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease;
+}
+.quote-box:hover {
+  transform: translateY(-3px);
+}
+.quote-box p {
+  font-style: italic;
+  font-size: 17px;
+  margin: 0;
+  color: #222;
+}
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+}
+
+/* SOSYAL MEDYA (DÜZENLENMİŞ) */
+#sosyal-medya {
   text-align: center;
   margin-top: 30px;
-  }
-
+}
 #sosyal-medya h4 {
   font-weight: 600;
   margin-bottom: 15px;
-  }
-
+}
 #sosyal-medya a {
   display: inline-block;
   margin: 0 10px;
-  }
-
+}
 #sosyal-medya img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   transition: transform 0.3s;
   vertical-align: middle;
-  }
-
+}
 #sosyal-medya img:hover {
   transform: scale(1.1);
-  }
+}
 
+/* FOOTER */
+footer {
+  background: #263238;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
 
-    /* HERO */
-    header {
-      position: relative;
-      background: url('hero.png') center/cover no-repeat;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 0 20px;
-    }
-    header .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5);
-      z-index: 1;
-    }
-    header h1, header p {
-      position: relative;
-      z-index: 2;
-    }
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    header p {
-      font-size: 18px;
-      max-width: 600px;
-    }
-
-    /* SECTIONS */
-    section {
-      max-width: 1000px;
-      margin: 80px auto;
-      background: white;
-      padding: 60px 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      text-align: center;
-      color: #0d47a1;
-      margin-bottom: 30px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #263238;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    /* Mobil Uyum için */
+/* RESPONSIVE (Mobil Uyum) */
 @media (max-width: 768px) {
   header h1 {
     font-size: 32px;
@@ -138,7 +202,7 @@
     margin: 40px 20px;
     padding: 30px 20px;
   }
-  }
+}
 
 @media (max-width: 480px) {
   header h1 {
@@ -158,55 +222,154 @@
     margin: 30px 15px;
     padding: 20px 15px;
   }
-  }
-  .quote-box {
-  background: #fefefe;
-  border-left: 4px solid #0d47a1;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  padding: 20px 25px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  transition: transform 0.2s ease;
-  }
+}
 
-.quote-box:hover {
-  transform: translateY(-3px);
-  }
+  .kitap-kartlar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-.quote-box p {
+.kitap-kart {
+  position: relative;
+  background-color: #e3f2fd;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  padding: 25px 20px 35px 20px; /* Alt boşluk arttı */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-weight: 600;
+  color: #0d47a1;
+  font-size: 16px;
+}
+
+.kitap-kart:hover {
+  background-color: #bbdefb;
+}
+
+.kitap-kart small {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 12px;
   font-style: italic;
-  font-size: 17px;
-  margin: 0;
-  color: #222;
-  }
-
-.quote-box span {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-  text-align: right;
-  }
+  color: #333;
+}
 
   </style>
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <nav>
     <a href="#hakkimda">Hakkımda</a>
     <a href="#basarilar">Başarılar</a>
     <a href="#sozler">Sözler</a>
+    <a href="javascript:void(0);" onclick="toggleFaaliyetPanel()">Faaliyetlerim</a>
+    <a href="javascript:void(0);" onclick="toggleKitapPanel()">Kitaplar</a>
   </nav>
-
-  <!-- HERO -->
   <header>
     <div class="overlay"></div>
     <h1>Feyyaz Yaşar SARI</h1>
     <p>Elektrik Elektronik Mühendisliği Öğrencisi | Geliştirici | Öğrenmeye Aç</p>
+    <button onclick="toggleHedefPanel()" id="hedefBtn" style="margin-top: 40px; background: none; border: none; cursor: pointer; z-index: 2;">
+      <img src="arrow-down.svg" alt="" width="40">
+    </button>
   </header>
 
-  <!-- HAKKIMDA -->
+  <section id="faaliyet-panel" style="display: none;">
+  <h2>Faaliyetlerim</h2>
+  <div class="hedef-basliklar">
+    <button class="hedef-link" onclick="toggleFaaliyetContent('takimlar')">Takımlar</button>
+    <button class="hedef-link" onclick="toggleFaaliyetContent('etkinlikler')">Etkinlikler</button>
+    <button class="hedef-link" onclick="toggleFaaliyetContent('seminerler')">Seminerler</button>
+    <button class="hedef-link" onclick="toggleFaaliyetContent('projeler')">Projeler</button>
+  </div>
+
+  <div class="hedef-kutu" id="takimlar" style="display: none;">
+    <h4>Takımlar</h4>
+    <p>Katıldığın öğrenci toplulukları, yarışma ekipleri gibi bilgiler.</p>
+  </div>
+
+  <div class="hedef-kutu" id="etkinlikler" style="display: none;">
+    <h4>Etkinlikler</h4>
+    <p>Katıldığın konferanslar, sempozyumlar, workshoplar gibi bilgiler.</p>
+  </div>
+
+  <div class="hedef-kutu" id="seminerler" style="display: none;">
+    <h4>Seminerler</h4>
+    <p>Katıldığın ya da düzenlediğin seminerler hakkında bilgiler.</p>
+  </div>
+
+  <div class="hedef-kutu" id="projeler" style="display: none;">
+    <h4>Projeler</h4>
+    <p>Üzerinde çalıştığın projeler, yarışma başvuruları gibi bilgiler.</p>
+  </div>
+  </section>
+
+
+  <section id="kitap-panel" style="display: none;">
+  <h2>Kitaplar</h2>
+
+  <!-- Kitap kutuları (kartlar) -->
+  <div class="kitap-kartlar">
+    <div class="kitap-kart" onclick="toggleKitapContent('kitap1')">
+      <small>Sabahattin Ali</small>
+      Kürk Mantolu Madonna
+    </div>
+    <div class="kitap-kart" onclick="toggleKitapContent('kitap2')">
+      <small>George Orwell</small>
+      1984
+    </div>
+    <div class="kitap-kart" onclick="toggleKitapContent('kitap3')">
+      <small>Paulo Coelho</small>
+      Simyacı
+    </div>
+    <div class="kitap-kart" onclick="toggleKitapContent('kitap4')">
+      <small>Stephen R. Covey</small>
+      Etkili İnsanların 7 Alışkanlığı
+    </div>
+  </div>
+
+  <!-- Kitap içerikleri -->
+  <div class="kitap-kutu" id="kitap1" style="display: none;">
+    <h4>Kürk Mantolu Madonna</h4>
+    <ul>
+      <li>“İnsan en çok sevdiklerini incitir.” <em>(s.45)</em></li>
+      <li>“Bazı insanlar vardır, hayatımıza girdiği an değiştirir.” <em>(s.112)</em></li>
+    </ul>
+  </div>
+
+  <div class="kitap-kutu" id="kitap2" style="display: none;">
+    <h4>1984</h4>
+    <ul>
+      <li>“Özgürlük, iki kere iki dört eder diyebilmektir.” <em>(s.84)</em></li>
+      <li>“Büyük Birader seni izliyor.” <em>(s.5)</em></li>
+    </ul>
+  </div>
+
+  <div class="kitap-kutu" id="kitap3" style="display: none;">
+    <h4>Simyacı</h4>
+    <ul>
+      <li>“Bir şeyi gerçekten istediğin zaman, tüm evren onu gerçekleştirmek için iş birliği yapar.” <em>(s.25)</em></li>
+      <li>“Beklemek, çoğu zaman unutmak demektir.” <em>(s.60)</em></li>
+    </ul>
+  </div>
+
+  <div class="kitap-kutu" id="kitap4" style="display: none;">
+    <h4>Etkili İnsanların 7 Alışkanlığı</h4>
+    <ul>
+      <li>“Alışkanlıklar karakteri, karakter kaderi belirler.” <em>(s.34)</em></li>
+      <li>“Tepkilerimizi seçme özgürlüğüne sahibiz.” <em>(s.78)</em></li>
+    </ul>
+  </div>
+</section>
+
+
+ <!-- HAKKIMDA -->
   <section id="hakkimda">
   <h2>Hakkımda</h2>
   <p>
@@ -293,14 +456,63 @@
     <span>- Claude Shannon</span>
   </div>
 
+  <div class="quote-box">
+    <p>“Yarınlar yorgun olanların değil, rahatından vazgeçenlerin olacaktır.”</p>
+    <span>- Hasan el Benna</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Yaralanmaz olan, darbe olmayan değil, darbeden incinmeyendir.”</p>
+    <span>- Farabi</span>
+  </div>
+
   </section>
 
-
-
-  <!-- FOOTER -->
   <footer>
     &copy; 2025 Feyyaz Yaşar SARI
   </footer>
+
+
+  <script>
+  function toggleKitapPanel() {
+    const panel = document.getElementById("kitap-panel");
+    if (panel.style.display === "none") {
+      panel.style.display = "block";
+      panel.scrollIntoView({ behavior: "smooth" });
+    } else {
+      panel.style.display = "none";
+    }
+  }
+
+  function toggleKitapContent(id) {
+    const kitaplar = ["kitap1", "kitap2", "kitap3", "kitap4"];
+    kitaplar.forEach(k => {
+      document.getElementById(k).style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+  }
+
+
+
+    
+  function toggleFaaliyetPanel() {
+  const panel = document.getElementById("faaliyet-panel");
+  if (panel.style.display === "none") {
+    panel.style.display = "block";
+    panel.scrollIntoView({ behavior: "smooth" });
+  } else {
+    panel.style.display = "none";
+  }
+}
+
+function toggleFaaliyetContent(id) {
+  const faaliyetler = ["takimlar", "etkinlikler", "seminerler", "projeler"];
+  faaliyetler.forEach(f => {
+    document.getElementById(f).style.display = "none";
+  });
+  document.getElementById(id).style.display = "block";
+}
+  </script>
 
 </body>
 </html>
