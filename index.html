@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feyyaz Yaşar SARI | Kişisel Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0d47a1;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #90caf9;
+    }
+
+    #sosyal-medya {
+  text-align: center;
+  margin-top: 30px;
+  }
+
+#sosyal-medya h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  }
+
+#sosyal-medya a {
+  display: inline-block;
+  margin: 0 10px;
+  }
+
+#sosyal-medya img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  vertical-align: middle;
+  }
+
+#sosyal-medya img:hover {
+  transform: scale(1.1);
+  }
+
+
+    /* HERO */
+    header {
+      position: relative;
+      background: url('hero.png') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      background: white;
+      padding: 60px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #263238;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* Mobil Uyum için */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  section {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+  }
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  nav a {
+    margin: 5px 10px;
+    font-size: 13px;
+  }
+  section {
+    margin: 30px 15px;
+    padding: 20px 15px;
+  }
+  }
+  .quote-box {
+  background: #fefefe;
+  border-left: 4px solid #0d47a1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease;
+  }
+
+.quote-box:hover {
+  transform: translateY(-3px);
+  }
+
+.quote-box p {
+  font-style: italic;
+  font-size: 17px;
+  margin: 0;
+  color: #222;
+  }
+
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#basarilar">Başarılar</a>
+    <a href="#sozler">Sözler</a>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <div class="overlay"></div>
+    <h1>Feyyaz Yaşar SARI</h1>
+    <p>Elektrik Elektronik Mühendisliği Öğrencisi | Geliştirici | Öğrenmeye Aç</p>
+  </header>
+
+  <!-- HAKKIMDA -->
+  <section id="hakkimda">
+  <h2>Hakkımda</h2>
+  <p>
+    Fransa’da Colmar şehrinde doğdum. Eğitim hayatımın yarısını Fransa’da, diğer yarısını Samsun’da tamamladıktan sonra Kırıkkale Üniversitesi’nde Elektrik Elektronik Mühendisliği bölümünü kazandım ve şu anda 3. sınıf öğrencisiyim. Eğitim ve araştırma süreçlerine yoğun ilgi gösteriyor, üniversite hayatım boyunca topluluklarda aktif görevler alarak takım çalışması ve liderlik yeteneklerimi geliştirdim. Ayrıca, çeşitli projelerde aktif olarak yer alıyor ve akademik araştırmalarımı sürdürüyorum.
+  </p>
+
+  <p style="text-align:center; margin-top: 30px;">
+    <a href="sitePortfoy.pdf" target="_blank" style="color: #0d47a1; font-weight: bold;">Portföyü Görüntüle (PDF)</a>
+  </p>
+
+  <div id="sosyal-medya" style="margin-top: 40px;">
+    <h4>Benimle Bağlantı Kurun</h4>
+    <a href="https://www.linkedin.com/in/feyyaz-sari-5b2326193/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/Feaz23" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+    <a href="https://www.instagram.com/feyyaz.sari" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+  </div>
+  </section>
+
+
+  <!-- BAŞARILAR -->
+  <section id="basarilar">
+    <h2>Başarılar</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin-bottom: 20px;">
+        <strong>Sıfırdan İleri Seviye Python Programlama</strong><br>
+        BTK Akademi'de 44 saatlik uygulamalı eğitim tamamlandı.<br>
+        <a href="Sıfırdan_İleri_Seviye_Python_Programlama_Sertifika_page-0001.jpg" target="_blank" style="color:#1976d2;">Sertifikayı Gör</a>
+      </li>
+      <li>
+        <strong>Gönüllü Fransızca Tercümanlığı</strong><br>
+        Kamerun Cumhuriyeti'nde gönüllü tercümanlık görevinde bulundum.<br>
+        <a href="Cansuyu.jpg" target="_blank" style="color:#1976d2;">Sertifikayı Gör</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SÖZLER -->
+  <section id="sozler">
+  <h2>İlham Verici Sözler</h2>
+
+  <div class="quote-box">
+    <p>“Dört şey geri gelmez: Söylenen söz, atılan ok, geçen zaman, kaçırılan fırsat.”</p>
+    <span>- Halife Ömer</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Hayatta en önemli şey, hangi yolda olduğun değil, o yolda nasıl yürüdüğündür.”</p>
+    <span>- Bruce Lee</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Şimdiki zaman çok kısadır, hatta öyle kısadır ki hiç yokmuş gibi görünür. Zira her daim hareket halindedir, akar ve hızla geçip gider, varlığı daha insana varmadan biter.”</p>
+    <span>- Farabi</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Ortalama insan; görmeden bakar, duymadan dinler, hissetmeden dokunur, tat almadan yer, fark etmeden hareket eder, kokuları ayırmadan nefes alır, düşünmeden konuşur. Böyle duygusal körlükte hafızanın evrenle ilişkisi kesilir.”</p>
+    <span>- Leonardo Da Vinci</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Söz ola kese savaşı, söz ola kestire başı, söz ola ağulu aşı, bal ile yağ ede bir söz.”</p>
+    <span>- Yunus Emre</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Vazgeçmek istemediğiniz her şey hayallerinize ulaşmanızı yavaşlatan şey olacaktır. Eğer bu liste gerçekten uzunsa önemli bir şey başarmanız mümkün değildir.”</p>
+    <span>- Dan Martell</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Öğrenme şansla elde edilmez; azimle aranmalı ve özenle sürdürülmelidir.”</p>
+    <span>- Abigail Adams</span>
+  </div>
+
+  <div class="quote-box">
+    <p>“Information is the resolution of uncertainty.”</p>
+    <span>- Claude Shannon</span>
+  </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Feyyaz Yaşar SARI
+  </footer>
+
+</body>
+</html>
